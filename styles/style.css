@@ -3,7 +3,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -16,7 +19,7 @@ h6 {
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
@@ -26,12 +29,8 @@ h6 {
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
   /* выше установили ограничения для секции */
 }
-
-.logo {}
 
 .logo_place_header {
   position: absolute;
@@ -51,8 +50,7 @@ h6 {
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  margin: 0 0 0 64px;
-  padding: 0;
+  margin-left: 64px;
   z-index: 5;
 }
 
@@ -64,17 +62,12 @@ h6 {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
   z-index: 5;
 }
 
 .header__link {
   text-decoration: none;
-  margin: 0;
-  padding: 0;
   color: #2f80ed;
-  z-index: 1;
 }
 
 .header__main-illustration {
@@ -84,8 +77,6 @@ h6 {
   width: 765px;
   height: 608px;
   z-index: 1;
-  margin: 0;
-  padding: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -96,16 +87,11 @@ h6 {
   right: 0;
   height: 568px;
   width: 568px;
-  margin: 0;
-  padding: 0;
 }
-
-.description {}
 
 .two-columns {
   display: flex;
   justify-content: space-between;
-  padding: 0;
   margin: 100px auto 100px auto;
   width: 80%;
 }
@@ -115,24 +101,21 @@ h6 {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
   color: #2f80ed;
+  list-style: none;
 }
 
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0 0 30px 0;
-  padding: 0;
+  margin-bottom: 30px;
 }
 
 .two-columns__paragraph:last-of-type {
@@ -143,23 +126,18 @@ h6 {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
-  margin: 0;
-  padding: 0;
 }
 
 .digits {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
 .section-title {
   display: block;
   text-align: center;
   width: 60%;
-  padding: 0;
   margin: 100px 0 20px 0;
   line-height: 1.15;
   font-size: 60px;
@@ -168,8 +146,6 @@ h6 {
 
 .section-subtitle {
   width: 60%;
-  padding: 0;
-  margin: 0;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -187,7 +163,6 @@ h6 {
 .table__cell {
   width: 250px;
   margin: 60px 0 0 0;
-  padding: 0;
 }
 
 .table__heading {
@@ -196,14 +171,14 @@ h6 {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
+  list-style: none;
 }
 
 .table__text {
-  padding: 0;
-  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  list-style: none;
 }
 
 .table__text:last-of-type {
@@ -236,8 +211,6 @@ h6 {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
 }
 
 .feynman__link {
@@ -255,8 +228,6 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
@@ -304,8 +275,6 @@ h6 {
 
 .kaufman__triangle {
   position: absolute;
-  margin: 0;
-  padding: 0;
   width: 877px;
   height: 877px;
   top: 0;
@@ -336,8 +305,6 @@ h6 {
 .logo_place_footer {
   width: 228px;
   height: 32px;
-  padding: 0;
-  margin: 0;
 }
 
 .footer__author {
@@ -345,6 +312,7 @@ h6 {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  font-style: normal;
   color: white;
 }
 
@@ -358,12 +326,14 @@ h6 {
   font-size: 18px;
   font-weight: 600;
   color: white;
+  list-style: none;
 }
 
 .footer__column-links {
   display: flex;
   flex-direction: column;
   margin: 20px 0 16px;
+  list-style: none;
 }
 
 .footer__social-link {
@@ -378,5 +348,4 @@ h6 {
   width: 16px;
   height: 16px;
   padding: 0 10px 0 0;
-  margin: 0;
 }
