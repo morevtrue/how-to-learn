@@ -92,7 +92,8 @@ li {
 .two-columns {
   display: flex;
   justify-content: space-between;
-  margin: 100px auto 100px auto;
+  margin: 0 auto;
+  padding: 100px 0 100px;
   width: 80%;
 }
 
@@ -102,13 +103,11 @@ li {
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-  list-style: none;
 }
 
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  list-style: none;
 }
 
 .two-columns__paragraph {
@@ -171,14 +170,12 @@ li {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  list-style: none;
 }
 
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  list-style: none;
 }
 
 .table__text:last-of-type {
@@ -326,14 +323,12 @@ li {
   font-size: 18px;
   font-weight: 600;
   color: white;
-  list-style: none;
 }
 
 .footer__column-links {
   display: flex;
   flex-direction: column;
   margin: 20px 0 16px;
-  list-style: none;
 }
 
 .footer__social-link {
